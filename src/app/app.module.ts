@@ -33,7 +33,7 @@ const appRoutes: Routes = [
     NotFoundComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'prerender'}),
     FormsModule,
     BrowserAnimationsModule,
     ClarityModule.forRoot(),
